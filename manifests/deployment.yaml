@@ -26,17 +26,17 @@ spec:
           env:
             - name: ASPNETCORE_URLS
               value: "http://+:8080;http://+:8081"  # Binding to ports
-          livenessProbe:
-            httpGet:
-              path: /weatherforecast
-              port: 8080
-              scheme: HTTP
-            initialDelaySeconds: 10
-            periodSeconds: 10
-          readinessProbe:
-            httpGet:
-              path: /weatherforecast
-              port: 8080
-              scheme: HTTP    
-            initialDelaySeconds: 10
-            periodSeconds: 10      
+          # livenessProbe:
+          #   httpGet:
+          #     path: /weatherforecast
+          #     port: 8080
+          #     scheme: HTTP
+          #   initialDelaySeconds: 10
+          #   periodSeconds: 10
+          # readinessProbe:
+          #   httpGet:
+          #     path: /weatherforecast
+          #     port: 8080
+          #     scheme: HTTP    
+          #   initialDelaySeconds: 10
+          #   periodSeconds: 10      
